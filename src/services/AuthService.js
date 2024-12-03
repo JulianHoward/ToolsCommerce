@@ -26,6 +26,16 @@ export const postRegister = async (credentials) => {
     });
 }
 
-export const getUserDetails = async () => {
-    return axios.get('http://localhost:3000/api/user').then((res) => res.data);
-}
+export const getUserDetails = async (token) => {
+    try {
+        const response = await axios.get('http://localhost:3000/api/users', {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error al obtener los detalles del usuario:', error);
+        throw error;
+    }
+};

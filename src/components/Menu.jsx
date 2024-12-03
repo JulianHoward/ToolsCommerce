@@ -26,6 +26,10 @@ const Menu = () => {
         navigate('/login');
     };
 
+    const handleHistorialClick = () => {
+        navigate('/historial');
+    };
+
     return (
         <>
             <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>
@@ -75,14 +79,24 @@ const Menu = () => {
                     <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                         Correo: {username ? `${username}@example.com` : 'correo@example.com'}
                     </Typography>
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        onClick={handleLogout}
-                        fullWidth
-                    >
-                        Cerrar Sesión
-                    </Button>
+                    <Box sx={{ display: 'flex', gap: 2 }}>
+                        <Button
+                            variant="contained"
+                            color="secondary"
+                            onClick={handleLogout}
+                            fullWidth
+                        >
+                            Cerrar Sesión
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            color="primary"
+                            onClick={handleHistorialClick}
+                            fullWidth
+                        >
+                            Historial
+                        </Button>
+                    </Box>
                 </Box>
             </Modal>
         </>

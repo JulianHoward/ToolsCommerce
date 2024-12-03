@@ -55,6 +55,7 @@ const LoginForm = () => {
         console.log("Login exitoso", res);
         localStorage.setItem('token', res.token);
         localStorage.setItem('username', correo);
+        localStorage.setItem('userId', res.userId);
         navigate('/home');
       })
       .catch((err) => {

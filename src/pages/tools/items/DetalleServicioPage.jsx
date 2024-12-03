@@ -5,7 +5,7 @@ import { getServicioById } from '../../../services/ServiciosService';
 import Menu from '../../../components/Menu';
 
 const DetalleServicioPage = () => {
-    const { servicioId } = useParams(); // Obtener el ID del servicio desde la URL
+    const { servicioId } = useParams();
     const [servicio, setServicio] = useState(null);
     const [loading, setLoading] = useState(true);
     const token = localStorage.getItem('token');
@@ -52,7 +52,7 @@ const DetalleServicioPage = () => {
                             <CardMedia
                                 component="img"
                                 height="300"
-                                image={`http://localhost:3000/${servicio.imagen}`} // Ajusta la URL de la imagen si es necesario
+                                image={`http://localhost:3000/${servicio.imagen}`}
                                 alt={servicio.nombre}
                             />
                         )}

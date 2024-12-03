@@ -15,6 +15,8 @@ import { CartProvider } from './components/CartContext';
 import CarritoPage from './pages/pagos/CarritoPage';
 import Success from './pages/pagos/Success';
 import Cancel from './pages/pagos/Cancel';
+import OfferPage from './pages/join/OfferPage';
+import HistorialPage from './pages/profile/HistorialPage';
 
 const router = createBrowserRouter([
   { path: '/home', element: <Homepage /> },
@@ -29,7 +31,8 @@ const router = createBrowserRouter([
   { path: '/carrito', element: <CarritoPage /> },
   { path: '/success', element: <Success /> },
   { path: '/cancel', element: <Cancel /> },
-
+  { path: '/join', element: <OfferPage /> },
+  { path: '/historial', element: <HistorialPage /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

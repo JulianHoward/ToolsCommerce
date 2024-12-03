@@ -94,51 +94,6 @@ const Homepage = () => {
                     </Grid>
                 </Container>
 
-                {/* Destacados */}
-                <Container sx={{ mt: 6 }}>
-                    <Typography variant="h4" component="h2" gutterBottom>
-                        Servicios y Herramientas Populares
-                    </Typography>
-                    <Grid container spacing={4}>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="https://via.placeholder.com/300x140"
-                                    alt="Taladro"
-                                />
-                                <CardContent>
-                                    <Typography variant="h6" component="h3">
-                                        Taladro Eléctrico
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        Desde $10/día
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Card>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="https://via.placeholder.com/300x140" // Cambia por imágenes reales
-                                    alt="Jardinería"
-                                />
-                                <CardContent>
-                                    <Typography variant="h6" component="h3">
-                                        Servicio de Jardinería
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        Desde $15/hora
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    </Grid>
-                </Container>
-
                 {/* Testimonios */}
                 <Box sx={{ backgroundColor: '#eeeeee', py: 4, mt: 6 }}>
                     <Container>

@@ -3,7 +3,7 @@ import axios from 'axios';
 export const postLogin = async (credentials) => {
     console.log('Intentando hacer login con', credentials);
     return new Promise((resolve, reject) => {
-        axios.post('http://localhost:3000/api/login', credentials)
+        axios.post('https://toolscommerce.onrender.com/api/login', credentials)
             .then((res) => {
                 localStorage.setItem('token', res.data.token);
                 localStorage.setItem('username', res.data.username);
@@ -17,7 +17,7 @@ export const postLogin = async (credentials) => {
 
 export const postRegister = async (credentials) => {
     return new Promise((resolve, reject) => {
-        axios.post('http://localhost:3000/api/register', credentials)
+        axios.post('https://toolscommerce.onrender.com/api/register', credentials)
             .then((res) => {
                 resolve(res.data);
             }).catch((err) => {
@@ -28,7 +28,7 @@ export const postRegister = async (credentials) => {
 
 export const getUserDetails = async (token) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/users', {
+        const response = await axios.get('https://toolscommerce.onrender.com/api/users', {
             headers: {
                 'Authorization': `Bearer ${token}`,
             },

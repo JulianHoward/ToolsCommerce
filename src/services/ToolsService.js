@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getCategoriasTools = async (token) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/categorias-herramientas', {
+        const response = await axios.get('https://toolscommerce.onrender.com/api/categorias-herramientas', {
             headers: {
                 'Authorization': `Bearer ${token}`
             },
@@ -16,7 +16,7 @@ export const getCategoriasTools = async (token) => {
 
 export const getCategoriaHerramientaById = async (id, token) => {
     try {
-        const response = await axios.get(`http://localhost:3000/api/categorias-herramientas/${id}`, {
+        const response = await axios.get(`https://toolscommerce.onrender.com/api/categorias-herramientas/${id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             },
@@ -28,7 +28,7 @@ export const getCategoriaHerramientaById = async (id, token) => {
     }
 };
 
-const API_BASE_URL = 'http://localhost:3000/api/productos';
+const API_BASE_URL = 'https://toolscommerce.onrender.com/api/productos';
 
 // Obtener todos los productos
 export const getProductos = async (token) => {

@@ -52,7 +52,7 @@ const DetalleServicioPage = () => {
                             <CardMedia
                                 component="img"
                                 height="300"
-                                image={`http://localhost:3000/${servicio.imagen}`}
+                                image={`https://toolscommerce.onrender.com/${servicio.imagen}`}
                                 alt={servicio.nombre}
                             />
                         )}

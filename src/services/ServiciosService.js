@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getCategoriasServices = async (token) => {
     try {
-        const response = await axios.get('http://localhost:3000/api/categorias-servicios', {
+        const response = await axios.get('https://toolscommerce.onrender.com/api/categorias-servicios', {
             headers: {
                 'Authorization': `Bearer ${token}`
             },
@@ -14,7 +14,7 @@ export const getCategoriasServices = async (token) => {
     }
 };
 
-const API_BASE_URL = 'http://localhost:3000/api/servicios';
+const API_BASE_URL = 'https://toolscommerce.onrender.com/api/servicios';
 
 // Obtener todos los servicios
 export const getServicios = async (token) => {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 export const createAlquiler = async (alquiler, token) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/alquileres', alquiler, {
+        const response = await axios.post('https://toolscommerce.onrender.com/api/alquileres', alquiler, {
             headers: {
                 'Authorization': `Bearer ${token}`,
             },
@@ -15,7 +15,7 @@ export const createAlquiler = async (alquiler, token) => {
 
 export const createContrato = async (contrato, token) => {
     try {
-        const response = await axios.post('http://localhost:3000/api/contratos', contrato, {
+        const response = await axios.post('https://toolscommerce.onrender.com/api/contratos', contrato, {
             headers: {
                 'Authorization': `Bearer ${token}`,
             },

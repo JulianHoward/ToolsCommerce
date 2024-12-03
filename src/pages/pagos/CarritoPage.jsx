@@ -71,7 +71,7 @@ const CarritoPage = () => {
         };
     
         try {
-            const response = await axios.post('http://localhost:3000/api/alquileres', newAlquiler, {
+            const response = await axios.post('https://toolscommerce.onrender.com/api/alquileres', newAlquiler, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -92,7 +92,7 @@ const CarritoPage = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:3000/api/contratos', newContrato, {
+            const response = await axios.post('https://toolscommerce.onrender.com/api/contratos', newContrato, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -139,7 +139,7 @@ const CarritoPage = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:3000/api/pagos/create-stripe-session', {
+            const response = await axios.post('https://toolscommerce.onrender.com/api/pagos/create-stripe-session', {
                 carrito: cart,
                 total: getTotal(),
                 clienteFK: 1,

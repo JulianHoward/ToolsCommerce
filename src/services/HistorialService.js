@@ -1,6 +1,6 @@
 import axios from 'axios';
 export const getAlquileres = async (token) => {
-    const response = await axios.get('http://localhost:3000/api/alquileres', {
+    const response = await axios.get('https://toolscommerce.onrender.com/api/alquileres', {
         headers: {
             'Authorization': `Bearer ${token}`,
         },
@@ -9,7 +9,7 @@ export const getAlquileres = async (token) => {
 };
 
 export const getServicios = async (token) => {
-    const response = await axios.get('http://localhost:3000/api/servicios', {
+    const response = await axios.get('https://toolscommerce.onrender.com/api/servicios', {
         headers: {
             'Authorization': `Bearer ${token}`,
         },

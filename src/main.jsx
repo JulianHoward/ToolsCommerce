@@ -33,6 +33,7 @@ const router = createBrowserRouter([
   { path: '/cancel', element: <Cancel /> },
   { path: '/join', element: <OfferPage /> },
   { path: '/historial', element: <HistorialPage /> },
+  { path: '/', element: <LoginForm /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
